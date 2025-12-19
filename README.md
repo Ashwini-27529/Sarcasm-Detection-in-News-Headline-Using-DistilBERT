@@ -2,12 +2,12 @@
 MCA Final year Research paper based project - Sarcasm Detection in news headline using DistilBERT a lightweight transformer based approach
 
 ## Project Overview
-[cite_start]This research addresses the challenge of identifying sarcasm in brief, context-sparse news headlines[cite: 1, 151]. [cite_start]While social media platforms offer cues like hashtags and emojis, news headlines rely purely on subtle linguistic incongruity[cite: 12, 169, 1301]. [cite_start]This project employs **DistilBERT**, a lightweight transformer model, to achieve a balance between high detection accuracy and computational efficiency suitable for real-time deployment[cite: 46, 105, 1226].
+This research addresses the challenge of identifying sarcasm in brief, context-sparse news headlines. While social media platforms offer cues like hashtags and emojis, news headlines rely purely on subtle linguistic incongruity. This project employs **DistilBERT**, a lightweight transformer model, to achieve a balance between high detection accuracy and computational efficiency suitable for real-time deployment.
 
 ## Key Features
-* [cite_start]**Architectural Efficiency:** Uses DistilBERT, which is 40% smaller and 60% faster than BERT-base while retaining 95-97% of its performance[cite: 93, 100, 103, 864].
-* [cite_start]**Precision-Oriented:** The model follows a conservative classification strategy, prioritizing high precision (reliability) to minimize false positives in media monitoring[cite: 121, 928, 1132].
-* [cite_start]**Interpretability:** Employs visual analytics such as confusion matrices and ROC curves to demystify model behavior[cite: 120, 216, 704].
+* **Architectural Efficiency:** Uses DistilBERT, which is 40% smaller and 60% faster than BERT-base while retaining 95-97% of its performance.
+* **Precision-Oriented:** The model follows a conservative classification strategy, prioritizing high precision (reliability) to minimize false positives in media monitoring.
+* **Interpretability:** Employs visual analytics such as confusion matrices and ROC curves to demystify model behavior.
 
 ## Dataset
 The dataset used for this project is the **News Headlines Dataset for Sarcasm Detection** from Kaggle. 
@@ -15,3 +15,31 @@ The dataset used for this project is the **News Headlines Dataset for Sarcasm De
 * **Source:** [Kaggle Dataset Link](https://www.kaggle.com/datasets/rmisra/news-headlines-dataset-for-sarcasm-detection)
 * **Author:** Rishabh Misra
 * **Description:** This dataset contains high-quality headlines from *The Onion* and *HuffPost* for the task of sarcasm detection.
+* This project utilizes a curated subset of the **Sarcasm Headlines Dataset**.
+* **Total Samples Used:** 3,600 headlines.
+* **Preprocessing:** Lowercasing and WordPiece subword tokenization with a fixed sequence length of 64 tokens
+
+## Model Performance
+The fine-tuned model achieved the following results on a held-out test set of 600 samples:
+
+| Metric | Value |
+| :--- | :--- |
+| **Accuracy** | 88.0% |
+| **Precision (Sarcastic)** | 0.92 |
+| **Recall (Sarcastic)** | 0.80 |
+| **F1-Score** | 0.86 |
+| **ROC-AUC** | 0.96 |
+
+## Visualizations
+### 1. Confusion Matrix
+The confusion matrix highlights the model's conservative nature, showing that false negatives (missed sarcasm) are more common than false positives.
+![Confusion Matrix](./path_to_your_image/confusion_matrix.png)
+
+### 2. ROC and Precision-Recall Curves
+The high AUC of 0.96 confirms excellent class separability.
+![ROC Curve](./path_to_your_image/roc_curve.png)
+![Precision-Recall Curve](./path_to_your_image/pr_curve.png)
+
+### 3. Training Dynamics
+Curves demonstrating convergence without overfitting.
+![Training Curves](./path_to_your_image/training_plot.png)
