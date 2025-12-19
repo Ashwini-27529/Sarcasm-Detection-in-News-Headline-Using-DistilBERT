@@ -1,0 +1,5 @@
+distilbert_sarcasm_model/
+Sarcasm_Headlines_Dataset.json
+__pycache__/
+*.h5
+*.pyc
