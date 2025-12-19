@@ -33,20 +33,28 @@ The fine-tuned model achieved the following results on a held-out test set of 60
 ## Visualizations
 ### 1. Confusion Matrix
 The confusion matrix highlights the model's conservative nature, showing that false negatives (missed sarcasm) are more common than false positives.
-[Confusion Matrix]<img width="338" height="383" alt="Picture1" src="https://github.com/user-attachments/assets/0784aadc-4982-4b4e-bf6f-9658f4a859c3" />
+
+
+<img width="338" height="383" alt="Picture1" src="https://github.com/user-attachments/assets/0784aadc-4982-4b4e-bf6f-9658f4a859c3" />
 
 
 
 ### 2. ROC and Precision-Recall Curves
 The high AUC of 0.96 confirms excellent class separability.
-![ROC Curve](./path_to_your_image/roc_curve.png)
-![Precision-Recall Curve](./path_to_your_image/pr_curve.png)
+
+<img width="338" height="383" alt="Picture3" src="https://github.com/user-attachments/assets/eb0bd125-3216-49e1-870e-6e51ebefbef7" />
+
+<img width="338" height="383" alt="Picture4" src="https://github.com/user-attachments/assets/68ffad01-9689-4ada-8b38-b8e4b5b28748" />
+
+
 
 ### 3. Training Dynamics
 Curves demonstrating convergence without overfitting.
-![Training Curves](./path_to_your_image/training_plot.png)
+
+<img width="400" height="426" alt="Picture2" src="https://github.com/user-attachments/assets/f2d145a0-9008-44e6-9910-c360c139cb64" />
+
 
 ### Detailed Classification Report
-The heatmap below visualizes the precision, recall, and F1-score for both classes. [cite_start]The model achieves an overall accuracy of **88%**, with a particularly high precision of **0.92** for the sarcastic class[cite: 1164, 1165].
+The heatmap below visualizes the precision, recall, and F1-score for both classes. The model achieves an overall accuracy of **88%**, with a particularly high precision of **0.92** for the sarcastic class.
 
-![Classification Report Heatmap](./images/classification_heatmap.png)
+<img width="338" height="383" alt="Picture5" src="https://github.com/user-attachments/assets/76997b4f-5d0d-4490-ba3f-e9277ccfaf8a" />
