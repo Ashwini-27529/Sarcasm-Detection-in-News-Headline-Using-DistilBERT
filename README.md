@@ -33,7 +33,10 @@ The fine-tuned model achieved the following results on a held-out test set of 60
 ## Visualizations
 ### 1. Confusion Matrix
 The confusion matrix highlights the model's conservative nature, showing that false negatives (missed sarcasm) are more common than false positives.
-![Confusion Matrix](./path_to_your_image/confusion_matrix.png)
+<img width="638" height="583" alt="Picture1" src="https://github.com/user-attachments/assets/0784aadc-4982-4b4e-bf6f-9658f4a859c3" />
+
+![Confusion Matrix](./path_to_your_image/confusion_![Uploading Picture1.png…]()
+matrix.png)
 
 ### 2. ROC and Precision-Recall Curves
 The high AUC of 0.96 confirms excellent class separability.
@@ -43,3 +46,8 @@ The high AUC of 0.96 confirms excellent class separability.
 ### 3. Training Dynamics
 Curves demonstrating convergence without overfitting.
 ![Training Curves](./path_to_your_image/training_plot.png)
+
+### Detailed Classification Report
+The heatmap below visualizes the precision, recall, and F1-score for both classes. [cite_start]The model achieves an overall accuracy of **88%**, with a particularly high precision of **0.92** for the sarcastic class[cite: 1164, 1165].
+
+![Classification Report Heatmap](./images/classification_heatmap.png)
